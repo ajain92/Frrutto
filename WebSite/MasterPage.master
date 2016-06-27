@@ -1,0 +1,74 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1
+        {
+            width: 187px;
+            height: 97px;
+        }
+        .auto-style3
+        {
+            width: 738px;
+        }
+        .auto-style4
+        {
+            width: 1724px;
+        }
+    </style>
+</head>
+<body><table>
+    <tr>
+  <th rowspan="2"><img alt="Frrutto_logo" class="auto-style1" src="file:///C:/Users/Aakash/Documents/My%20Web%20Sites/WebSite1/WebSite/Images/frrutto_logo.png" /></th>
+   <td colspan="2" style="background-color: Blue; background-image: none; background-repeat: no-repeat; background-attachment: fixed; background-position: center center" class="auto-style3"><h3 style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: larger; font-weight: bold; font-style: italic; font-variant: inherit; text-transform: capitalize; color: antiquewhite">
+       <marquee behaviour="alternate">Quality for Less</marquee></h3></td>
+
+</tr>
+<tr>
+    <td class="auto-style4"><h1 style="font-family: 'Comic Sans MS'; font-size: xx-large; font-style: inherit; font-variant: normal; text-transform: inherit; color: #FF0000; text-decoration: underline">
+            healthy and fresh fruits </h1></td>
+     <td class="auto-style3" style="background-color: yellow; background-image: none; background-repeat: no-repeat; background-attachment: fixed; background-position: center center">
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:HyperLink ID="HyperLink7" runat="server" NavigateUrl="~/Signin.aspx" Font-Bold="True" Font-Size="Large" ForeColor="#000066">SignIn</asp:HyperLink>
+            &nbsp; &nbsp;|&nbsp;&nbsp;
+         <asp:HyperLink ID="HyperLink6" runat="server" NavigateUrl="~/Signup.aspx" Font-Bold="True" Font-Size="Large" ForeColor="#000066" >SignUp</asp:HyperLink>
+        
+     </td>
+
+ </tr>
+</table>
+    
+    <form id="form1" runat="server">
+    <div style="width:936px; background-color:red; height: 30px; margin-top: 5px;";>
+        
+        
+            <p style="height: 31px">
+                <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Home.aspx" BackColor="Red" Font-Bold="True" Font-Size="Large" ForeColor="Yellow">Home</asp:HyperLink>
+            &nbsp; |&nbsp;
+                <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Food.aspx" BackColor="Red" Font-Bold="True" Font-Size="Large" ForeColor="Yellow">Food In Store</asp:HyperLink>
+                
+            &nbsp; |&nbsp;
+                <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/About.aspx" BackColor="Red" Font-Bold="True" Font-Size="Large" ForeColor="Yellow">About</asp:HyperLink>
+            
+            &nbsp; |&nbsp;
+                <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/Contact.aspx" BackColor="Red" Font-Bold="True" Font-Size="Large" ForeColor="Yellow">Contact</asp:HyperLink>
+            &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/Cart.aspx" BackColor="Red" Font-Bold="True" Font-Size="Large" ForeColor="Yellow">My Cart</asp:HyperLink></p>
+        
+    </div>
+
+        <div>
+            <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+                <p>
+                    &nbsp;</p>
+        </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
